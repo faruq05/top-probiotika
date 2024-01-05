@@ -459,20 +459,30 @@ th {
 .save {
     background-image: radial-gradient(circle at right, rgba(1, 77, 183, 0.2) 0%, rgba(1, 77, 183, 0.85) 50%), url(../images/pharmacy-07.jpg);
     padding: 100px 0px;
+    padding-top: 350px;
     background-position: bottom center;
+    position: relative;
 }
 
 .save_div {
-    background-image: url(../images/download\ \(3\).svg);
+    background-image: url(../images/curve.svg);
+    background-position: center left;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     transform: scale(1, -1);
 }
 
 
-.save_title {}
+.save_title {
+    position: relative;
+    z-index: 10;
+}
 
 .save_title h2 {
     font-weight: 700;
@@ -482,7 +492,7 @@ th {
 
 .save_title h4 {
     font-weight: 600;
-    font-size: 170px;
+    font-size: 200px;
     line-height: 0.9em;
     text-shadow: 0.03em 0.03em 0em rgba(40, 101, 150, 0.5);
     color: var(--cs-white);
@@ -492,7 +502,10 @@ th {
     color: var(--cs-white) !important;
 }
 
-.save_content {}
+.save_content {
+    position: relative;
+    z-index: 10;
+}
 
 .save_content h4 {
     font-weight: 600;
@@ -537,14 +550,32 @@ th {
     background-color: #144b7a;
 }
 
+.btnsv2 {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+
 /* pverg ends  */
 
 /* capsule starts */
 .capsule {
     background: radial-gradient(circle at top right, rgba(1, 77, 183, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url(../images/pharmacy-06.jpg);
-    background-position: top right;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.cpdivide {
+    background-image: url(../images/curve2.svg);
+    background-size: 100% 50px;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    transform: scale(-1, -1);
 }
 
 .tes_badge {
@@ -644,6 +675,7 @@ th {
 
 .studien2 {
     border-bottom: 0px;
+    overflow-y: hidden;
 }
 
 /* capsule ebds */
@@ -679,4 +711,5 @@ th {
 .footer_list a:hover {
     text-decoration: underline;
 }
+
 /* footer ends */
